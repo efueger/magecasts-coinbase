@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "be4152a07a8a4226d5dc81deef6789e6",
+    "hash": "fef18d2b486f2d93353042341180babc",
     "packages": [],
     "packages-dev": [
         {
@@ -63,20 +63,20 @@
         },
         {
             "name": "magetest/magento-phpspec-extension",
-            "version": "dev-master",
+            "version": "3.0.0_BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MageTest/MageSpec.git",
-                "reference": "ed77f86770abc2ff4c43039972e15fbc8b7892b4"
+                "reference": "818d5508bcf1726d6d97701bcbb222b1642b4e09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MageTest/MageSpec/zipball/ed77f86770abc2ff4c43039972e15fbc8b7892b4",
-                "reference": "ed77f86770abc2ff4c43039972e15fbc8b7892b4",
+                "url": "https://api.github.com/repos/MageTest/MageSpec/zipball/818d5508bcf1726d6d97701bcbb222b1642b4e09",
+                "reference": "818d5508bcf1726d6d97701bcbb222b1642b4e09",
                 "shasum": ""
             },
             "require": {
-                "phpspec/phpspec": "~2.1.1",
+                "phpspec/phpspec": "~2.2.0",
                 "shanethehat/pretty-xml": "~1.0.1",
                 "symfony/config": "*",
                 "symfony/dependency-injection": "*"
@@ -145,7 +145,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2015-04-03 17:45:57"
+            "time": "2015-05-14 09:18:50"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -232,23 +232,23 @@
         },
         {
             "name": "phpspec/phpspec",
-            "version": "2.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/phpspec.git",
-                "reference": "66a1df93099282b1514e9e001fcf6e9393f7783d"
+                "reference": "147ff359413be67781d1dd1f3be5d7a4d4af769a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/66a1df93099282b1514e9e001fcf6e9393f7783d",
-                "reference": "66a1df93099282b1514e9e001fcf6e9393f7783d",
+                "url": "https://api.github.com/repos/phpspec/phpspec/zipball/147ff359413be67781d1dd1f3be5d7a4d4af769a",
+                "reference": "147ff359413be67781d1dd1f3be5d7a4d4af769a",
                 "shasum": ""
             },
             "require": {
-                "doctrine/instantiator": "~1.0,>=1.0.1",
+                "doctrine/instantiator": "^1.0.1",
                 "php": ">=5.3.3",
                 "phpspec/php-diff": "~1.0.0",
-                "phpspec/prophecy": "~1.1",
+                "phpspec/prophecy": "~1.4",
                 "sebastian/exporter": "~1.0",
                 "symfony/console": "~2.3",
                 "symfony/event-dispatcher": "~2.1",
@@ -257,9 +257,11 @@
                 "symfony/yaml": "~2.1"
             },
             "require-dev": {
-                "behat/behat": "~3.0,>=3.0.11",
+                "behat/behat": "^3.0.11",
                 "bossa/phpspec2-expect": "~1.0",
-                "symfony/filesystem": "~2.1"
+                "phpunit/phpunit": "~4.4",
+                "symfony/filesystem": "~2.1",
+                "symfony/process": "~2.1"
             },
             "suggest": {
                 "phpspec/nyan-formatters": "~1.0 – Adds Nyan formatters"
@@ -270,7 +272,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -304,7 +306,7 @@
                 "testing",
                 "tests"
             ],
-            "time": "2015-01-09 13:21:45"
+            "time": "2015-06-06 08:44:20"
         },
         {
             "name": "phpspec/prophecy",
@@ -1065,9 +1067,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "magetest/magento-phpspec-extension": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

@@ -1,9 +1,10 @@
 {
     "name": "amacgregor/magecasts-coinbase",
     "description": "Magento Bitcoin Payment Method powered by coinbase",
+    "minimum-stability": "dev",
     "require-dev": {
-        "magetest/magento-phpspec-extension": "dev-master",
-        "phpspec/phpspec": "~2.1"
+        "phpspec/phpspec": "~2.1",
+        "magetest/magento-phpspec-extension": "*"
     },
     "config": {
        "bin-dir": "bin"
