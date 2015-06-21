@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Magecasts_Coinbase>
+            <version>0.1.0</version>
+        </Magecasts_Coinbase>
+    </modules>
+    <global>
+        <models>
+            <magecasts_coinbase>
+                <class>Magecasts_Coinbase_Model</class>
+            </magecasts_coinbase>
+        </models>
+    </global>
+</config>

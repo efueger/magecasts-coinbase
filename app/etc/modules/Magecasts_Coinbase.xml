@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Magecasts_Coinbase>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Magecasts_Coinbase>
+    </modules>
+</config>

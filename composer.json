@@ -3,8 +3,8 @@
     "description": "Magento Bitcoin Payment Method powered by coinbase",
     "minimum-stability": "dev",
     "require-dev": {
-        "phpspec/phpspec": "~2.1",
-        "magetest/magento-phpspec-extension": "*"
+        "phpspec/phpspec": "2.0.1",
+        "magetest/magento-phpspec-extension": "~2.0"
     },
     "config": {
        "bin-dir": "bin"
