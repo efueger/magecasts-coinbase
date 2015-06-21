@@ -12,6 +12,11 @@ class Magecasts_Coinbase_Model_MethodSpec extends ObjectBehavior
         $this->shouldHaveType('Magecasts_Coinbase_Model_Method');
     }
 
+    function let(\Magecasts_Coinbase_Model_Adapter_Magento $mageAdapter)
+    {
+        $this->beConstructedWith(array('mage_adapter' => $mageAdapter));
+    }
+
     function it_should_extend_the_payment_abstract_class()
     {
         $this->shouldHaveType('Mage_Payment_Model_Method_Abstract');
@@ -32,8 +37,11 @@ class Magecasts_Coinbase_Model_MethodSpec extends ObjectBehavior
         $this->canUseCheckout()->shouldReturn(true);
     }
 
-    function it_should_authorise_a_payment_transaction(\Mage_Sales_Model_Order_Payment $payment)
+    function it_should_authorise_a_payment_transaction(\Mage_Sales_Model_Order_Payment $payment,
+                                                        $mageAdapter)
     {
+        $mageAdapter->getConfigValue('payment/magecasts_coinbase/api_key')
+            ->willReturn('apikeystring');
         $amount = 10.00;
         $this->authorize($payment, $amount)->shouldReturn($this);
     }
