@@ -2,9 +2,9 @@ engines:
   fixme:
     enabled: true
   phpcodesniffer:
-    enabled: false
-  phpmd:
     enabled: true
+  phpmd:
+    enabled: false
 ratings:
   paths:
   - "**.php"
