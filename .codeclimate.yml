@@ -1,8 +1,8 @@
 engines:
   fixme:
-    enabled: false
-  phpcodesniffer:
     enabled: true
+  phpcodesniffer:
+    enabled: false
   phpmd:
     enabled: true
 ratings:
